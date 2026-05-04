@@ -1,13 +1,10 @@
 from astrbot.api.event import filter
-from astrbot.api.all import Star, Context, Plain, Reply, logger
+from astrbot.api.all import Star, Plain, Reply, logger
 from astrbot.core.platform.sources.aiocqhttp.aiocqhttp_message_event import AiocqhttpMessageEvent
 
 
 class 表情ID(Star):
     """表情ID查询与发送插件"""
-
-    def __init__(self, context: Context):
-        super().__init__(context)
 
     @filter.command("表情ID")
     @filter.platform_adapter_type(filter.PlatformAdapterType.AIOCQHTTP)

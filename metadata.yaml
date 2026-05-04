@@ -1,6 +1,6 @@
 name: 表情ID
 display_name: 表情ID查询与发送
 desc: 表情ID功能 - 查询消息中的表情ID，或发送指定ID的表情
-version: v1.0.0
+version: v1.0.1
 author: 懒大猫
 repo: https://github.com/landamao/abpl_qqfaceid

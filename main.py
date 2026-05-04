@@ -14,7 +14,7 @@ class 表情ID(Star):
     async def 表情ID(self, event: AiocqhttpMessageEvent, text: str = None):
         """查询或发送指定ID的表情"""
         event.stop_event()
-        if isinstance(text, int) or text.isdigit():
+        if isinstance(text, int) or (isinstance(text, str) and text.isdigit()):
             if event.get_group_id():
                 结果 = await event.bot.send_msg(
                     group_id=int(event.get_group_id()),
